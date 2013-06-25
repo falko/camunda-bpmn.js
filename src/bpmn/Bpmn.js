@@ -154,5 +154,9 @@ define(['jquery', 'bpmn/Transformer', 'bpmn/Renderer'], function ($, Transformer
     $("#"+this.options.diagramElement).empty();
   };
 
+  Bpmn.prototype.toSvg = function () {
+    return this.definitionRenderer.toSvg();
+  };
+
   return Bpmn;
 });

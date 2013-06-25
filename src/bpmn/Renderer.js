@@ -1449,6 +1449,10 @@ define([ "dojox/gfx", "jquery" ], function (gfx, $) {
     return null;
   };
 
+  BpmnElementRenderer.prototype.toSvg = function () {
+    return dojox.gfx.utils.toSvg(getSurface());
+  };
+
   BpmnElementRenderer.prototype.RENDERER_DELEGATES = RENDERER_DELEGATES;
 
   return BpmnElementRenderer;
